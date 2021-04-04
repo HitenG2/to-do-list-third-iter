@@ -20,14 +20,6 @@
   border-radius: 5px;
   padding: 10px;
 }
-@media (max-width: 767px) {
-  .add-todo {
-		width: 100%;
-	}
-	.todo-list{
-		width: 100%;
-	}
-}
 .add-todo__input {
   width: 100%;
 }
@@ -66,6 +58,14 @@
   display: flex;
   flex-direction: column;
 	width: 60%;
+}
+@media (max-width: 767px) {
+  .add-todo {
+		width: 100%;
+	}
+	.todo-list{
+		width: 100%;
+	}
 }
 .todo-list__item {
   display: flex;
