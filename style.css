@@ -1,0 +1,222 @@
+.container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.header {
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 3%;
+}
+.add-todo {
+  display: flex;
+  width: 60%;
+  min-height: 40px;
+  align-items: center;
+  /*background-color: beige;*/
+  background-color: green;
+  border-radius: 5px;
+  padding: 10px;
+}
+.add-todo__input {
+  width: 100%;
+}
+.add-todo__input input {
+  width: 100%;
+  height: 25px;
+  border: none;
+	border-radius: 6px 6px 6px 6px;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+.add-todo__btn {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+.add-todo__btn button {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 0.05em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #fdbe33 #000 #d77206;
+  border-radius: 6px;
+  background: linear-gradient(#f3ae0f, #e38916) #e38916;
+  transition: 0.2s;
+}
+.add-todo__btn button:hover {
+  background: linear-gradient(#f5ae00, #f59500) #f5ae00;
+}
+.add-todo__btn button:active {
+  background: linear-gradient(#f59500, #f5ae00) #f59500;
+}
+.todo-list {
+  display: flex;
+  flex-direction: column;
+	width: 60%;
+}
+@media (max-width: 767px) {
+  .add-todo {
+		width: 100%;
+	}
+	.todo-list{
+		width: 100%;
+	}
+}
+.todo-list__item {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  height: 4rem;
+  line-height: 30px;
+  min-height: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: orange;
+  padding-left: 10px;
+}
+.description {
+	width: 100%;
+	overflow:auto;
+  list-style-type: none;
+	word-wrap: break-word;
+}
+.todo-list__btns {
+  position: absolute;
+	right: 1%;
+}
+.todo-list__delete-btn {
+  width: 96px;
+  height: 30px;
+  line-height: 1.5em;
+  text-shadow: 0 -1px 1px #777;
+  color: #fff;
+  outline: none;
+  border: 2px solid #f64c2b;
+  border-radius: 5px;
+  background: linear-gradient(#fb9575, #f45a38 48%, #ea1502 52%, #f02f17);
+}
+.todo-list__delete-btn button:active {
+  background: linear-gradient(#f59500, #f5ae00) #f59500;
+}
+.checkbox {
+  cursor: pointer;
+  transform: scale(2.3);
+  margin-right: 10px;
+	margin-left: 10px;
+}
+.checked {
+  background-color: darkgrey;
+  opacity: 0.5;
+}
+.fade-out {
+  animation: fadeOut ease 1s;
+  -webkit-animation: fadeOut ease 1s;
+  -moz-animation: fadeOut ease 1s;
+  -o-animation: fadeOut ease 1s;
+  -ms-animation: fadeOut ease 1s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* .fade-in {
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
