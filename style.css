@@ -75,16 +75,14 @@
   padding-left: 10px;
 }
 .description {
-	width: 65%;
+	width: 100%;
 	overflow:auto;
   list-style-type: none;
 	word-wrap: break-word;
 }
 .todo-list__btns {
   position: absolute;
-  width: 100%;
-  left: 71%;
-  align-items: flex-end;
+	right: 1%;
 }
 .todo-list__delete-btn {
   width: 96px;
